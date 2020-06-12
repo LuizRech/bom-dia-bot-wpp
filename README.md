@@ -1,0 +1,1 @@
+bot para gerar imagens de bom dia para mandar no zap zap
