@@ -1,6 +1,7 @@
 import jimp from 'jimp';
 import path from 'path';
 import moment from 'moment';
+import wa from '@open-wa/wa-automate';
 
 moment.locale('pt-br');
 
@@ -91,7 +92,15 @@ async function getExactlyDay(){
 		);
 
     const imageBase64 = await imageWithText.getBase64Async(jimp.MIME_JPEG);
-    console.log(imageBase64);
-})();
+		// console.log(imageBase64);
+		
 
-// Executar o node no terminal, pegar a url que ele gera e jogar no browser, obtendo a imagem xD
+		async function sendMessageWpp(){
+			const client = await wa.create();
+			const groups = await client.getAllGroups();
+			const filteredGroups = await groups.filter(group => group.formattedTitle == "Teste");
+
+		  await client.sendFile(filteredGroups[0].id, imageBase64, 'bomdia.jpg', "BotSendMessageToFilteredGroups");
+		}
+		sendMessageWpp()
+})();
