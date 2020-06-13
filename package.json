@@ -1,0 +1,12 @@
+{
+  "name": "bon-dia-bot-wpp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LuizRech/bom-dia-bot-wpp.git",
+  "author": "Luiz Rech <luizadre@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.13.0",
+    "moment": "^2.26.0"
+  }
+}
