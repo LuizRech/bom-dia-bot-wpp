@@ -9,3 +9,5 @@ bot para gerar imagens de bom dia para mandar no zap zap
   <li>Scan the qr code in your whatsapp</li>
   <li>Enjoy ;)</li>
 </ul>
+
+Developed just for fun and practice <3
