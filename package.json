@@ -8,6 +8,6 @@
   "dependencies": {
     "@open-wa/wa-automate": "^1.9.71",
     "jimp": "^0.13.0",
-    "moment": "^2.26.0"
+    "moment": "^2.29.2"
   }
 }
